@@ -34,3 +34,21 @@ Describe all different ideal template projects for developing Cloud Native appli
 * Change the server port
 * Build docker image
 * Run docker image
+
+== Basic ideal project
+
+Descibe and explain each required file for the basic ideal project.
+
+=== Maven configuration file
+
+//File 0
+microprofile-config.properties
+[source, Text, linenums, role='code_column hide_tags=copyright']
+----
+include::basic-hotspot/pom.xml[]
+----
+
+Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
+
+The project is targeted to package the microserive as a [hotspot=groudId file=0]`war` file.
+

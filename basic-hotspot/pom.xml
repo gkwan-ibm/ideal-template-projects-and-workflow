@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <!--  tag::groudId -->
+    <groupId>io.openliberty.templates</groupId>
+    <!--  end::groudId -->
+    <!--  tag::artifactId -->
+    <artifactId>basic-microservice</artifactId>
+    <!--  end::artifactId -->
+    <!--  tag::version -->
+    <version>1.0-SNAPSHOT</version>
+    <!--  end::version -->
+    <!--  tag::packaging -->
+    <packaging>war</packaging>
+    <!--  end::packaging -->
+
+    <properties>
+        <!--  tag::encoding -->
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <!--  end::encoding -->
+        <!--  tag::compiler -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+        <!--  end::compiler -->
+        <!-- Plugin versions -->
+        <!--  tag::pluginVersions -->
+        <version.liberty-maven-plugin>3.2</version.liberty-maven-plugin>
+        <version.maven-failsafe-plugin>2.22.2</version.maven-failsafe-plugin>
+        <version.maven-war-plugin>3.2.3</version.maven-war-plugin>
+        <version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
+        <!--  end::pluginVersions -->
+        <!-- Liberty configuration -->
+        <!--  tag::libertyProperties -->
+        <liberty.var.default.http.port>9080</liberty.var.default.http.port>
+        <liberty.var.default.https.port>9443</liberty.var.default.https.port>
+        <!--  end::libertyProperties -->
+        <!-- Default test properties -->
+        <!--  tag::testProperties -->
+        <!--  end::testProperties -->
+    </properties>
+
+    <dependencies>
+        <!-- Provided dependencies -->
+        <!--  tag::providedDependencies -->
+        <!--  tag::jakartaDependency -->
+        <dependency>
+            <groupId>jakarta.platform</groupId>
+            <artifactId>jakarta.jakartaee-web-api</artifactId>
+            <version>8.0.0</version>
+            <scope>provided</scope>
+        </dependency>
+        <!--  end::jakartaDependency -->
+        <!--  tag::microprofileDependency -->
+        <dependency>
+            <groupId>org.eclipse.microprofile</groupId>
+            <artifactId>microprofile</artifactId>
+            <version>3.2</version>
+            <type>pom</type>
+            <scope>provided</scope>
+        </dependency>
+        <!--  end::microprofileDependency -->
+        <!--  end::providedDependencies -->
+
+        <!-- For tests -->
+        <!--  tag::testDependencies -->
+        <!--  tag::junit5Dependeny -->
+        <dependency>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.5.2</version>
+            <scope>test</scope>
+        </dependency>
+        <!--  end::junit5Dependency -->
+        <!--  tag::mstDependencies -->
+        <dependency>
+            <groupId>org.microshed</groupId>
+            <artifactId>microshed-testing-liberty</artifactId>
+            <version>0.6.1.1</version>
+            <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-log4j12</artifactId>
+            <version>1.7.30</version>
+            <scope>test</scope>
+        </dependency>
+        <!--  end::mstDependencies -->
+        <!--  end::testDependencies -->
+    </dependencies>
+
+    <build>
+        <!--  tag::finalName -->
+        <finalName>${project.artifactId}</finalName>
+        <!--  end::finalName -->
+        <plugins>
+            <!-- Plugin to build war file -->
+            <!--  tag::warPlugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${version.maven-war-plugin}</version>
+            </plugin>
+            <!--  end::warPlugin -->
+            <!-- Enable Liberty Maven plugin -->
+            <!--  tag::lmPlugin -->
+            <plugin>
+                <groupId>io.openliberty.tools</groupId>
+                <artifactId>liberty-maven-plugin</artifactId>
+                <version>${version.liberty-maven-plugin}</version>
+            </plugin>
+            <!--  tag::lmPlugin -->
+            <!-- Plugin to run unit tests -->
+            <!--  tag::surefirePlugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>${version.maven-surefire-plugin}</version>
+            </plugin>
+            <!--  end::surefirePlugin -->
+            <!-- Plugin to run functional tests -->
+            <!--  tag::failsafePlugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-failsafe-plugin</artifactId>
+                <version>${version.maven-failsafe-plugin}</version>
+                <configuration>
+                    <systemPropertyVariables>
+                    </systemPropertyVariables>
+                </configuration>
+            </plugin>
+            <!--  end::failsafePlugin -->
+        </plugins>
+    </build>
+</project>
