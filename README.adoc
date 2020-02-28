@@ -50,6 +50,6 @@ include::basic-hotspot/pom.xml[]
 
 Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
 
-The project is targeted to package the microserive as a [hotspot=groudId file=0]`war` file.
+The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
 
 === Liberty configuration file
