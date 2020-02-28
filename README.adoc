@@ -1,0 +1,36 @@
+//  Copyright (c) 2020 IBM Corporation and others.
+// Licensed under Creative Commons Attribution-NoDerivatives
+// 4.0 International (CC BY-ND 4.0)
+//   https://creativecommons.org/licenses/by-nd/4.0/
+//
+// Contributors:
+//     IBM Corporation
+//
+:projectid: ideal-template-projects-and-workflow
+:page-layout: guide-multipane
+:page-duration: 0 minutes
+:page-releasedate: 2020-12-31
+:page-description: Describe the ideal template projects for Open Liberty
+:guide-author: Open Liberty
+:page-tags: ['MicroProfile', 'Jakarta EE', 'Microservices']
+:page-related-guides: [ ]
+:page-permalink: /guides/{projectid}
+:imagesdir: /img/guide/{projectid}
+:page-seo-title: Describe the ideal template projects for Open Liberty
+:page-seo-description: Describe all different ideal template projects for developing Cloud Native application with Open Liberty
+:common-includes: https://raw.githubusercontent.com/OpenLiberty/guides-common/master
+:source-highlighter: prettify
+= Describe all different ideal template projects for developing Cloud Native application with Open Liberty
+
+[.hidden]
+NOTE: This repository contains the guide documentation source. To view the guide in published form, view it on the https://openliberty.io/guides/{projectid}.html[Open Liberty website].   
+
+Describe all different ideal template projects for developing Cloud Native application with Open Liberty.
+
+== What you'll learn
+
+* Basic ideal project
+* Use the Liberty Development Mode to develop microservice
+* Change the server port
+* Build docker image
+* Run docker image
