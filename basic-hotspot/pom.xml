@@ -5,57 +5,57 @@
 
     <modelVersion>4.0.0</modelVersion>
 
-    <!--  tag::groudId -->
+    <!--  tag::groudId[] -->
     <groupId>io.openliberty.templates</groupId>
-    <!--  end::groudId -->
-    <!--  tag::artifactId -->
+    <!--  end::groudId[] -->
+    <!--  tag::artifactId[] -->
     <artifactId>basic-microservice</artifactId>
-    <!--  end::artifactId -->
-    <!--  tag::version -->
+    <!--  end::artifactId[] -->
+    <!--  tag::version[] -->
     <version>1.0-SNAPSHOT</version>
-    <!--  end::version -->
-    <!--  tag::packaging -->
+    <!--  end::version[] -->
+    <!--  tag::packaging[] -->
     <packaging>war</packaging>
-    <!--  end::packaging -->
+    <!--  end::packaging[] -->
 
     <properties>
-        <!--  tag::encoding -->
+        <!--  tag::encoding[] -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
-        <!--  end::encoding -->
-        <!--  tag::compiler -->
+        <!--  end::encoding[] -->
+        <!--  tag::compiler[] -->
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <!--  end::compiler -->
+        <!--  end::compiler[] -->
         <!-- Plugin versions -->
-        <!--  tag::pluginVersions -->
+        <!--  tag::pluginVersions[] -->
         <version.liberty-maven-plugin>3.2</version.liberty-maven-plugin>
         <version.maven-failsafe-plugin>2.22.2</version.maven-failsafe-plugin>
         <version.maven-war-plugin>3.2.3</version.maven-war-plugin>
         <version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
-        <!--  end::pluginVersions -->
+        <!--  end::pluginVersions[] -->
         <!-- Liberty configuration -->
-        <!--  tag::libertyProperties -->
+        <!--  tag::libertyProperties[] -->
         <liberty.var.default.http.port>9080</liberty.var.default.http.port>
         <liberty.var.default.https.port>9443</liberty.var.default.https.port>
-        <!--  end::libertyProperties -->
+        <!--  end::libertyProperties[] -->
         <!-- Default test properties -->
-        <!--  tag::testProperties -->
-        <!--  end::testProperties -->
+        <!--  tag::testProperties[] -->
+        <!--  end::testProperties[] -->
     </properties>
 
     <dependencies>
         <!-- Provided dependencies -->
-        <!--  tag::providedDependencies -->
-        <!--  tag::jakartaDependency -->
+        <!--  tag::providedDependencies[] -->
+        <!--  tag::jakartaDependency[] -->
         <dependency>
             <groupId>jakarta.platform</groupId>
             <artifactId>jakarta.jakartaee-web-api</artifactId>
             <version>8.0.0</version>
             <scope>provided</scope>
         </dependency>
-        <!--  end::jakartaDependency -->
-        <!--  tag::microprofileDependency -->
+        <!--  end::jakartaDependency[] -->
+        <!--  tag::microprofileDependency[] -->
         <dependency>
             <groupId>org.eclipse.microprofile</groupId>
             <artifactId>microprofile</artifactId>
@@ -63,20 +63,20 @@
             <type>pom</type>
             <scope>provided</scope>
         </dependency>
-        <!--  end::microprofileDependency -->
-        <!--  end::providedDependencies -->
+        <!--  end::microprofileDependency[] -->
+        <!--  end::providedDependencies[] -->
 
         <!-- For tests -->
-        <!--  tag::testDependencies -->
-        <!--  tag::junit5Dependeny -->
+        <!--  tag::testDependencies[] -->
+        <!--  tag::junit5Dependeny[] -->
         <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-engine</artifactId>
             <version>5.5.2</version>
             <scope>test</scope>
         </dependency>
-        <!--  end::junit5Dependency -->
-        <!--  tag::mstDependencies -->
+        <!--  end::junit5Dependency[] -->
+        <!--  tag::mstDependencies[] -->
         <dependency>
             <groupId>org.microshed</groupId>
             <artifactId>microshed-testing-liberty</artifactId>
@@ -89,41 +89,41 @@
             <version>1.7.30</version>
             <scope>test</scope>
         </dependency>
-        <!--  end::mstDependencies -->
-        <!--  end::testDependencies -->
+        <!--  end::mstDependencies[] -->
+        <!--  end::testDependencies[] -->
     </dependencies>
 
     <build>
-        <!--  tag::finalName -->
+        <!--  tag::finalName[] -->
         <finalName>${project.artifactId}</finalName>
-        <!--  end::finalName -->
+        <!--  end::finalName[] -->
         <plugins>
             <!-- Plugin to build war file -->
-            <!--  tag::warPlugin -->
+            <!--  tag::warPlugin[] -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
                 <version>${version.maven-war-plugin}</version>
             </plugin>
-            <!--  end::warPlugin -->
+            <!--  end::warPlugin[] -->
             <!-- Enable Liberty Maven plugin -->
-            <!--  tag::lmPlugin -->
+            <!--  tag::lmPlugin[] -->
             <plugin>
                 <groupId>io.openliberty.tools</groupId>
                 <artifactId>liberty-maven-plugin</artifactId>
                 <version>${version.liberty-maven-plugin}</version>
             </plugin>
-            <!--  tag::lmPlugin -->
+            <!--  tag::lmPlugin[] -->
             <!-- Plugin to run unit tests -->
-            <!--  tag::surefirePlugin -->
+            <!--  tag::surefirePlugin[] -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${version.maven-surefire-plugin}</version>
             </plugin>
-            <!--  end::surefirePlugin -->
+            <!--  end::surefirePlugin[] -->
             <!-- Plugin to run functional tests -->
-            <!--  tag::failsafePlugin -->
+            <!--  tag::failsafePlugin[] -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-failsafe-plugin</artifactId>
@@ -133,7 +133,7 @@
                     </systemPropertyVariables>
                 </configuration>
             </plugin>
-            <!--  end::failsafePlugin -->
+            <!--  end::failsafePlugin[] -->
         </plugins>
     </build>
 </project>
