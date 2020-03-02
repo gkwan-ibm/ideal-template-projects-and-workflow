@@ -44,7 +44,9 @@ Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId fil
 
 The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
 
-* need version properties?
+Currently we define [hotspot=pluginVersions file=0]`<version.*/>` in the pom.xml.
+* it is necessary?
+* if do that, why not the `<dependency/>`?
 
 * need ports properties?
 
