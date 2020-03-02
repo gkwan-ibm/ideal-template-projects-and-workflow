@@ -27,14 +27,6 @@ NOTE: This repository contains the guide documentation source. To view the guide
 
 Describe all different ideal template projects for developing Cloud Native application with Open Liberty.
 
-== What you'll learn
-
-* Basic ideal project
-* Use the Liberty Development Mode to develop microservice
-* Change the server port
-* Build docker image
-* Run docker image
-
 == Basic ideal project
 
 Descibe and explain each required file for the basic ideal project.
@@ -52,4 +44,17 @@ Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId fil
 
 The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
 
+* need version properties?
+
+* need ports properties?
+
 === Liberty configuration file
+
+== Use the Liberty Development Mode to develop microservice
+
+== Change the server port
+
+== Build docker image
+* When build docker image, should the artifacts be from `src` or `target`?
+
+== Run docker image
