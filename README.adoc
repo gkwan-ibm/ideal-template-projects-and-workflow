@@ -59,9 +59,9 @@ pom.xml
 
 (To be confirmed) Currently, we define [hotspot=pluginVersions file=0]`<version.*/>` properties for the plugin version.
 
-> is it necessary? +
-> if yes, why not the `<dependency/>`? +
-> suggest not need to do that
+> ~ is it necessary? +
+> ~ if yes, why not the `<dependency/>`? +
+> ~ suggest not need to do that
 
 (To be confirmed) We define [hotspot=libertyProperties file=0]`ports` properties for the server and [hotspot=ports file=0]`test`, so that both can pick up the same ports if users change them.
 
@@ -80,7 +80,7 @@ pom.xml
 build.gradle and settings.gradle
 ----
 
-> Should include Gradle project?
+> ~ Should include Gradle project?
 
 ---
 
@@ -109,14 +109,14 @@ src/main/liberty/config/server.xml
 
 (To be confirmed) The minimal set of [hotspot=featureManager file=1]`features` are: `jaxrs-2.1`, ...
 
-> what should the minimal set of features be? +
-> Should include `mpHealth` feature?
+> ~ what should the minimal set of features be? +
+> ~ should include `mpHealth` feature?
 
 (To be confirmed) The [hotspot=httpEndpoint file=1]`httpEndpoint` ports are defined by the `defaultValue` of the [hotspot=httpPort file=1]`default.http.port` and [hotspot=httpsPort file=1]`default.http.port` variables. They can be overridden through the [hotspot=httpPortProperties file=0]`pom.xml`.
 
 (To be confirmed) The webApplication [hotspot=webApplication file=1]`location` should be [hotspot=artifactId file=0]`${artifactId}.war`. The [hotspot=webApplication file=1]`contextRoot` is defined by the [hotspot=appContextRoot file=1]`defaultValue` of the `app.context.root` variable. It can be overridden through the [hotspot=contextRootProperty file=0]`pom.xml`.
 
-> Should externalize the context root?
+> ~ Should externalize the context root?
 
 ---
 
