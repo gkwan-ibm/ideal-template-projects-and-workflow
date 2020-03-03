@@ -37,14 +37,14 @@ Descibe and explain each required file for the basic ideal template project.
 
 === Maven configuration file
 
-//File 0
+// File 0
 pom.xml
 [source, Text, linenums, role='code_column hide_tags=copyright']
 ----
 include::basic-hotspot/pom.xml[]
 ----
 
-[role="code_command hotspot file=1", subs="quotes"]
+[role="code_command hotspot file=0", subs="quotes"]
 ----
 #View the Maven configuration file.#
 `pom.xml`
@@ -76,7 +76,7 @@ include::basic-hotspot/pom.xml[]
 
 === Liberty server configuration file
 
-//File 1
+// File 1
 pom.xml
 [source, Text, linenums, role='code_column hide_tags=copyright']
 ----
@@ -89,12 +89,12 @@ include::basic-hotspot/src/main/liberty/config/server.xml[]
 `src/main/liberty/config/server.xml`
 ----
 
-(To be confirmed) Users will update the [hotspot=groudId file=0]`description`
+(To be confirmed) Users will update the [hotspot=groudId file=1]`description`
 
-(To be confirmed) The minimal set of [hotspot=featureManager file=0]`features` are: `jaxrs-2.1`, ...
+(To be confirmed) The minimal set of [hotspot=featureManager file=1]`features` are: `jaxrs-2.1`, ...
 
 > what should the minimal set of features be? +
-> > Should include mpHealth-2.1?
+> Should include `mpHealth` feature?
 
 == Use the Liberty Development Mode to develop microservice
 
