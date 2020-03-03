@@ -6,10 +6,12 @@
     </featureManager>
     <!-- end::featureManager[] -->
 
-    <!-- tag::httpPorts[] -->
+    <!-- tag::httpPort[] -->
     <variable name="default.http.port" defaultValue="9080"/>
+    <!-- end::httpPort[] -->
+    <!-- tag::httpsPort[] -->
     <variable name="default.https.port" defaultValue="9443"/>
-    <!-- end::httpPorts[] -->
+    <!-- end::httpsPort[] -->
     <!-- tag::appContextRoot[] -->
     <variable name="app.context.root" defaultValue="/"/>
     <!-- end::appContextRoot[] -->

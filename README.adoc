@@ -73,6 +73,17 @@ pom.xml
 
 ---
 
+=== Gradle configuration file
+
+[role="no_copy"]
+----
+build.gradle and settings.gradle
+----
+
+> Should include Gradle project?
+
+---
+
 === Liberty server configuration file
 
 // File 0
@@ -101,10 +112,43 @@ src/main/liberty/config/server.xml
 > what should the minimal set of features be? +
 > Should include `mpHealth` feature?
 
-(To be confirmed) The [hotspot=httpEndpoint file=1]`httpEndpoint` ports are defined by the [hotspot=httpPorts file=1]`defaultValue` of the `default.http.port` and `default.http.port` variables. They can be overridden through the [hotspot=httpPortProperties file=0]`pom.xml`.
+(To be confirmed) The [hotspot=httpEndpoint file=1]`httpEndpoint` ports are defined by the `defaultValue` of the [hotspot=httpPort file=1]`default.http.port` and [hotspot=httpsPort file=1]`default.http.port` variables. They can be overridden through the [hotspot=httpPortProperties file=0]`pom.xml`.
 
-(To be confirmed) The webApplication [hotspot=webApplication file=1]`location` should be [hotspot=artifactId file=0]`${artifactId}.war`. The [hotspot=httpEndpoint file=1]`contextRoot` is defined by the [hotspot=appContextRoot file=1]`defaultValue` of the `app.context.root` variable. It can be overridden through the [hotspot=contextRootProperty file=0]`pom.xml`.
- 
+(To be confirmed) The webApplication [hotspot=webApplication file=1]`location` should be [hotspot=artifactId file=0]`${artifactId}.war`. The [hotspot=webApplication file=1]`contextRoot` is defined by the [hotspot=appContextRoot file=1]`defaultValue` of the `app.context.root` variable. It can be overridden through the [hotspot=contextRootProperty file=0]`pom.xml`.
+
+> Should need to externalize the context root?
+
+---
+
+=== Application class
+
+[role="no_copy"]
+----
+src/main/java/io/openliberty/templates/basic/SimpleRestApplication.java
+----
+
+---
+
+=== Endpoint class
+
+[role="no_copy"]
+----
+src/main/java/io/openliberty/templates/basic/SimpleRestEndpoint.java 
+----
+
+---
+
+=== Unit Test
+
+---
+
+=== Integration Test
+
+
+---
+
+=== Dockerfile
+
 
 == Use the Liberty Development Mode to develop microservice
 
