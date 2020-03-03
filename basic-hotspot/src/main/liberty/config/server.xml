@@ -1,0 +1,27 @@
+<server description="Simple RESTful microservice">
+
+    <!-- tag::featureManager[] -->
+    <featureManager>
+        <feature>jaxrs-2.1</feature>
+    </featureManager>
+    <!-- end::featureManager[] -->
+
+    <!-- tag::httpPorts[] -->
+    <variable name="default.http.port" defaultValue="9080"/>
+    <variable name="default.https.port" defaultValue="9443"/>
+    <variable name="app.context.root" defaultValue="/"/>
+    <!-- tag::httpPorts[] -->
+  
+    <!-- tag::httpEndpoint[] -->
+    <httpEndpoint id="defaultHttpEndpoint" host="*"
+  	    httpPort="${default.http.port}" 
+  	    httpsPort="${default.https.port}"
+    />
+    <!-- end::httpEndpoint[] -->
+  
+    <!-- tag::webApplication[] -->
+    <webApplication location="simple-rest-microservice.war" 
+    	  contextRoot="${app.context.root}"
+    />
+    <!-- end::webApplication[] -->
+</server>

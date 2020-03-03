@@ -9,7 +9,7 @@
     <groupId>io.openliberty.templates</groupId>
     <!--  end::groudId[] -->
     <!--  tag::artifactId[] -->
-    <artifactId>basic-microservice</artifactId>
+    <artifactId>simple-rest-microservice</artifactId>
     <!--  end::artifactId[] -->
     <!--  tag::version[] -->
     <version>1.0-SNAPSHOT</version>

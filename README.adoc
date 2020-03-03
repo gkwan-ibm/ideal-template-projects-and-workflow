@@ -27,9 +27,13 @@ NOTE: This repository contains the guide documentation source. To view the guide
 
 Describe all different ideal template projects for developing Cloud Native application with Open Liberty.
 
-== Basic ideal project
+== Basic ideal template project
 
-Descibe and explain each required file for the basic ideal project.
+Descibe and explain each required file for the basic ideal template project.
+
+> Assume that the project is a simple RESTful microservice by using MicroProfile features.
+
+---
 
 === Maven configuration file
 
@@ -40,10 +44,16 @@ pom.xml
 include::basic-hotspot/pom.xml[]
 ----
 
+[role="code_command hotspot file=1", subs="quotes"]
+----
+#View the Maven configuration file.#
+`pom.xml`
+----
+
 (To be confirmed) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
 
-> what should the groupId be? +
-> what should the artifactId be? +
+> what should the `groupId` be? +
+> what should the `artifactId` be? +
 > assume that version is `1.0-SNAPSHOT`
 
 (To be confirmed) The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
@@ -58,13 +68,33 @@ include::basic-hotspot/pom.xml[]
 
 (To be confirmed) We define the 2 provided dependencies: [hotspot=jakartaDependency file=0]`jakartaee` and [hotspot=microprofileDependency file=0]`microprofile`.
 
-(To be confirmed) Assume to use MST, so we define those [hotspot=testDependencies file=0]`test` dependencies.
+(To be confirmed) Assume to use Microshed Testing (MST), so we define those [hotspot=testDependencies file=0]`test` dependencies.
 
 (To be confirmed) We define [hotspot=finalName file=0]`<finalName/>` as the [hotspot=artifactId file=0]`artifactId`.
 
 ---
 
-=== Liberty configuration file
+=== Liberty server configuration file
+
+//File 1
+pom.xml
+[source, Text, linenums, role='code_column hide_tags=copyright']
+----
+include::basic-hotspot/src/main/liberty/config/server.xml[]
+----
+
+[role="code_command hotspot file=1", subs="quotes"]
+----
+#View the Liberty server configuration file.#
+`src/main/liberty/config/server.xml`
+----
+
+(To be confirmed) Users will update the [hotspot=groudId file=0]`description`
+
+(To be confirmed) The minimal set of [hotspot=featureManager file=0]`features` are: `jaxrs-2.1`, ...
+
+> what should the minimal set of features be? +
+> > Should include mpHealth-2.1?
 
 == Use the Liberty Development Mode to develop microservice
 
