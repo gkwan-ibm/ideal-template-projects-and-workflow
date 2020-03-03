@@ -63,7 +63,7 @@ pom.xml
 > ~ if yes, why not the `<dependency/>`? +
 > ~ suggest not need to do that
 
-(To be confirmed) We define [hotspot=libertyProperties file=0]`ports` properties for the server and [hotspot=ports file=0]`test`, so that both can pick up the same ports if users change them.
+(To be confirmed) We define [hotspot=httpPortProperties file=0]`ports` properties for the server and [hotspot=ports file=0]`test`, so that both can pick up the same ports if users change them.
 
 (To be confirmed) We define the 2 provided dependencies: [hotspot=jakartaDependency file=0]`jakartaee` and [hotspot=microprofileDependency file=0]`microprofile`.
 
