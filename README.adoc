@@ -75,6 +75,13 @@ pom.xml
 
 === Liberty server configuration file
 
+// File 0
+pom.xml
+[source, XML, linenums, role='code_column'] 
+----
+include::basic-hotspot/pom.xml[]
+----
+
 // File 1
 server.xml
 [source, XML, linenums, role='code_column'] 
@@ -87,12 +94,15 @@ include::basic-hotspot/src/main/liberty/config/server.xml[]
 src/main/liberty/config/server.xml
 ----
 
-(To be confirmed) Users will update the [hotspot=groudId file=0]`description`
+(To be confirmed) Users will update the [hotspot=1 file=1]`description`
 
-(To be confirmed) The minimal set of [hotspot=featureManager file=0]`features` are: `jaxrs-2.1`, ...
+(To be confirmed) The minimal set of [hotspot=featureManager file=1]`features` are: `jaxrs-2.1`, ...
 
 > what should the minimal set of features be? +
 > Should include `mpHealth` feature?
+
+(To be confirmed) The [hotspot=httpEndpoint file=1]`httpEndpoint` ports are defined by the [hotspot=httpPorts file=1]`defaultValue` of the `default.http.port` and `default.http.port` variables. They can be overridden through the [hotspot=libertyProperties file=0]`pom.xml`.
+
 
 == Use the Liberty Development Mode to develop microservice
 
