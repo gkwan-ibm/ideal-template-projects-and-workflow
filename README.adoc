@@ -37,17 +37,16 @@ Descibe and explain each required file for the basic ideal template project.
 
 === Maven configuration file
 
-[role="code_command hotspot", subs="quotes"]
-----
-#View the Maven configuration file.#
-`pom.xml`
-----
-
 // File 0
 pom.xml
 [source, Text, linenums, role='code_column hide_tags=copyright']
 ----
 include::basic-hotspot/pom.xml[]
+----
+
+[role="no_copy"]
+----
+pom.xml
 ----
 
 (To be confirmed) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
@@ -76,17 +75,16 @@ include::basic-hotspot/pom.xml[]
 
 === Liberty server configuration file
 
-[role="code_command hotspot", subs="quotes"]
-----
-#View the Liberty server configuration file.#
-`src/main/liberty/config/server.xml`
-----
-
 // File 1
 server.xml
-[source, Text, linenums, role='code_column hide_tags=copyright']
+[source, XML, linenums, role='code_column'] 
 ----
 include::basic-hotspot/src/main/liberty/config/server.xml[]
+----
+
+[role="no_copy"]
+----
+src/main/liberty/config/server.xml
 ----
 
 (To be confirmed) Users will update the [hotspot=groudId file=1]`description`
