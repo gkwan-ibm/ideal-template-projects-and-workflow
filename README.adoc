@@ -39,7 +39,7 @@ Descibe and explain each required file for the basic ideal template project.
 
 // File 0
 pom.xml
-[source, Text, linenums, role='code_column hide_tags=copyright']
+[source, XML, linenums, role='code_column'] 
 ----
 include::basic-hotspot/pom.xml[]
 ----
@@ -87,9 +87,9 @@ include::basic-hotspot/src/main/liberty/config/server.xml[]
 src/main/liberty/config/server.xml
 ----
 
-(To be confirmed) Users will update the [hotspot=groudId file=1]`description`
+(To be confirmed) Users will update the [hotspot=groudId file=0]`description`
 
-(To be confirmed) The minimal set of [hotspot=featureManager file=1]`features` are: `jaxrs-2.1`, ...
+(To be confirmed) The minimal set of [hotspot=featureManager file=0]`features` are: `jaxrs-2.1`, ...
 
 > what should the minimal set of features be? +
 > Should include `mpHealth` feature?
