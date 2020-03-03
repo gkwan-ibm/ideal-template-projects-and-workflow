@@ -51,9 +51,9 @@ pom.xml
 
 (To be confirmed) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
 
-> > what should the `groupId` be? +
-> {checkedbox} what should the `artifactId` be? +
-> {uncheckedbox} assume that version is `1.0-SNAPSHOT`
+> ~ what should the `groupId` be? +
+> ~ what should the `artifactId` be? +
+> ~ assume that version is `1.0-SNAPSHOT`
 
 (To be confirmed) The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
 
