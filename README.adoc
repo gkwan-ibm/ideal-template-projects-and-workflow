@@ -51,7 +51,7 @@ pom.xml
 
 (To be confirmed) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
 
-[CAUTION]
+[NOTE]
 ====
 what should the `groupId` be? +
 what should the `artifactId` be? +
