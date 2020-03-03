@@ -40,30 +40,23 @@ pom.xml
 include::basic-hotspot/pom.xml[]
 ----
 
-(To be confirm) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
+(To be confirmed) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
 
-(To be confirm) The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
+(To be confirmed) The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
 
-Currently, we define [hotspot=pluginVersions file=0]`<version.*/>` properties for the plugin version.
+(To be confirmed) Currently, we define [hotspot=pluginVersions file=0]`<version.*/>` properties for the plugin version.
 
 * it is necessary?
 * if do that, why not the `<dependency/>`?
 
-We define [hotspot=libertyProperties file=0]`ports` properties for the server and [hotspot=ports file=0]`test`, so that both can pick up the same ports if users change them.
+(To be confirmed) We define [hotspot=libertyProperties file=0]`ports` properties for the server and [hotspot=ports file=0]`test`, so that both can pick up the same ports if users change them.
 
-* To be confirm
+(To be confirmed) We define the 2 provided dependencies: [hotspot=jakartaDependency file=0]`jakartaee` and [hotspot=microprofileDependency file=0]`microprofile`.
 
-We define the 2 provided dependencies: [hotspot=jakartaDependency file=0]`jakartaee` and [hotspot=microprofileDependency file=0]`microprofile`.
+(To be confirmed) Assume to use MST, so we define those [hotspot=testDependencies file=0]`test` dependencies.
 
-* To be confirm
+(To be confirmed) We define [hotspot=finalName file=0]`<finalName/>` as the [hotspot=artifactId file=0]`artifactId`.
 
-Assume to use MST, so we define those [hotspot=testDependencies file=0]`test` dependencies.
-
-* To be confirm
-
-We define [hotspot=finalName file=0]`<finalName/>` as the [hotspot=artifactId file=0]`artifactId`.
-
-* To be confirm
 
 === Liberty configuration file
 
