@@ -35,10 +35,14 @@
         <version.maven-surefire-plugin>2.22.2</version.maven-surefire-plugin>
         <!--  end::pluginVersions[] -->
         <!-- Liberty configuration -->
-        <!--  tag::libertyProperties[] -->
+        <!--  tag::httpPortProperties[] -->
         <liberty.var.default.http.port>9080</liberty.var.default.http.port>
         <liberty.var.default.https.port>9443</liberty.var.default.https.port>
-        <!--  end::libertyProperties[] -->
+        <!--  end::httpPortProperties[] -->
+        <!--  tag::contextRootProperty[] -->
+        <liberty.var.app.context.root>/simple</liberty.var.app.context.root>
+        <!--  end::contextRootProperty[] -->
+
         <!-- Default test properties -->
         <!--  tag::testProperties[] -->
         <!--  end::testProperties[] -->

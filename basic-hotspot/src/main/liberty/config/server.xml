@@ -9,8 +9,10 @@
     <!-- tag::httpPorts[] -->
     <variable name="default.http.port" defaultValue="9080"/>
     <variable name="default.https.port" defaultValue="9443"/>
+    <!-- end::httpPorts[] -->
+    <!-- tag::appContextRoot[] -->
     <variable name="app.context.root" defaultValue="/"/>
-    <!-- tag::httpPorts[] -->
+    <!-- end::appContextRoot[] -->
   
     <!-- tag::httpEndpoint[] -->
     <httpEndpoint id="defaultHttpEndpoint" host="*"
