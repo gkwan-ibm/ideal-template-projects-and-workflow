@@ -51,9 +51,12 @@ pom.xml
 
 (To be confirmed) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
 
-> what should the `groupId` be? +
-> what should the `artifactId` be? +
-> assume that version is `1.0-SNAPSHOT`
+[CAUTION]
+====
+what should the `groupId` be? +
+what should the `artifactId` be? +
+assume that version is `1.0-SNAPSHOT`
+====
 
 (To be confirmed) The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
 
@@ -116,7 +119,7 @@ src/main/liberty/config/server.xml
 
 (To be confirmed) The webApplication [hotspot=webApplication file=1]`location` should be [hotspot=artifactId file=0]`${artifactId}.war`. The [hotspot=webApplication file=1]`contextRoot` is defined by the [hotspot=appContextRoot file=1]`defaultValue` of the `app.context.root` variable. It can be overridden through the [hotspot=contextRootProperty file=0]`pom.xml`.
 
-> Should need to externalize the context root?
+> Should externalize the context root?
 
 ---
 
