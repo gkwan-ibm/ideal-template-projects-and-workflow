@@ -44,7 +44,7 @@ pom.xml
 include::basic-hotspot/pom.xml[]
 ----
 
-[role="code_command hotspot file=0", subs="quotes"]
+[role="code_command hotspot", subs="quotes"]
 ----
 #View the Maven configuration file.#
 `pom.xml`
@@ -77,13 +77,13 @@ include::basic-hotspot/pom.xml[]
 === Liberty server configuration file
 
 // File 1
-pom.xml
+server.xml
 [source, Text, linenums, role='code_column hide_tags=copyright']
 ----
 include::basic-hotspot/src/main/liberty/config/server.xml[]
 ----
 
-[role="code_command hotspot file=1", subs="quotes"]
+[role="code_command hotspot", subs="quotes"]
 ----
 #View the Liberty server configuration file.#
 `src/main/liberty/config/server.xml`
