@@ -42,12 +42,17 @@ include::basic-hotspot/pom.xml[]
 
 (To be confirmed) Users will update the [hotspot=groudId file=0]`groupId`, [hotspot=artifactId file=0]`artifactId`, and [hotspot=version file=0]`version`.
 
+> what should the groupId be? +
+> what should the artifactId be? +
+> assume that version is `1.0-SNAPSHOT`
+
 (To be confirmed) The project is targeted to package the microserive as a [hotspot=packaging file=0]`war` file.
 
 (To be confirmed) Currently, we define [hotspot=pluginVersions file=0]`<version.*/>` properties for the plugin version.
 
-* it is necessary?
-* if do that, why not the `<dependency/>`?
+> is it necessary? +
+> if yes, why not the `<dependency/>`? +
+> suggest not need to do that
 
 (To be confirmed) We define [hotspot=libertyProperties file=0]`ports` properties for the server and [hotspot=ports file=0]`test`, so that both can pick up the same ports if users change them.
 
@@ -57,6 +62,7 @@ include::basic-hotspot/pom.xml[]
 
 (To be confirmed) We define [hotspot=finalName file=0]`<finalName/>` as the [hotspot=artifactId file=0]`artifactId`.
 
+---
 
 === Liberty configuration file
 
