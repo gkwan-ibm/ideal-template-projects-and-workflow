@@ -30,6 +30,7 @@ Drafting: Describe all different ideal template projects for developing Cloud Na
 == Basic ideal template project
 
 Descibe and explain each required file for the basic ideal template project.
+Testing `&lt;testing&gt;`.
 
 > Assume that the project is a simple RESTful microservice by using MicroProfile features.
 
